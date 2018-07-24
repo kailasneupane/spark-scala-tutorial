@@ -73,14 +73,18 @@ object WordCount2 {
     // Exercise: Use other versions of the Bible:
     //   The data directory contains similar files for the Tanach (t3utf.dat - in Hebrew),
     //   the Latin Vulgate (vuldat.txt), the Septuagint (sept.txt - Greek)
+
     // Exercise: See the Scaladoc page for `OrderedRDDFunctions`:
     //   http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.OrderedRDDFunctions
     //   Sort the output by word, try both ascending and descending.
     //   Note this can be expensive for large data sets! (Why??)
+
     // Exercise: Take the output from the previous exercise and count the number
     //   of words that start with each letter of the alphabet and each digit.
+
     // Exercise (Hard): Sort the output by count. You can't use the same
     //   approach as in the previous exercise. Hint: See RDD.keyBy
+
     //   (http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.RDD)
     //   What's the most frequent word that isn't a "stop word".
     // Exercise (Hard): Group the word-count pairs by count. In other words,
