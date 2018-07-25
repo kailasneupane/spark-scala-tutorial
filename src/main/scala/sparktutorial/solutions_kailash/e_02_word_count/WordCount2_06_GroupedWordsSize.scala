@@ -1,4 +1,4 @@
-package sparktutorial.solutions_kailash.e_01_word_count
+package sparktutorial.solutions_kailash.e_02_word_count
 
 /**
   * Created by kneupane on 7/25/18.

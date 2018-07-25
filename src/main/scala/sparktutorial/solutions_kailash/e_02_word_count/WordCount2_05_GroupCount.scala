@@ -1,4 +1,4 @@
-package sparktutorial.solutions_kailash.e_01_word_count
+package sparktutorial.solutions_kailash.e_02_word_count
 
 import org.apache.spark.rdd.RDD
 
