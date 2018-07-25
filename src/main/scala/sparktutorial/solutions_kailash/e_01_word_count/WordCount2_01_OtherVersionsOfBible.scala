@@ -16,11 +16,11 @@ object WordCount2_01_OtherVersionsOfBible {
   def wordCountOfBible(): RDD[(String, Int)] = {
 
     //word count
-    var wc = WC2Setup.input.flatMap(x => x.split("""[^\p{IsAlphabetic}]+"""))
+    var wc = WC2Resources.input.flatMap(x => x.split("""[^\p{IsAlphabetic}]+"""))
       .map(x => (x, 1))
       .reduceByKey((x, y) => (x + y))
     wc.foreach(println)
-    wc.saveAsTextFile(WC2Setup.ioPath._2)
+    wc.saveAsTextFile(WC2Resources.ioPath._2)
     println("completed")
     wc
   }

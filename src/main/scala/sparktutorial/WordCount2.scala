@@ -84,13 +84,14 @@ object WordCount2 {
 
     // Exercise (Hard): Sort the output by count. You can't use the same
     //   approach as in the previous exercise. Hint: See RDD.keyBy
-
     //   (http://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.rdd.RDD)
     //   What's the most frequent word that isn't a "stop word".
+
     // Exercise (Hard): Group the word-count pairs by count. In other words,
     //   All pairs where the count is 1 are together (i.e., just one occurrence
     //   of those words was found), all pairs where the count is 2, etc. Sort
     //   ascending or descending. Hint: Is there a method for grouping?
+
     // Exercise (Thought Experiment): Consider the size of each group created
     //   in the previous exercise and the distribution of those sizes vs. counts.
     //   What characteristics would you expect for this distribution? That is,

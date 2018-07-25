@@ -14,7 +14,7 @@ object WordCount2_03_LetterCount {
   def letterCount() = {
     var lc = sortedWC.map(x => (x._1, x._1.length))
     lc.foreach(println)
-    lc.saveAsTextFile(WC2Setup.ioPath._2 + "/letter_count/")
+    lc.saveAsTextFile(WC2Resources.ioPath._2 + "/letter_count/")
     lc
   }
 

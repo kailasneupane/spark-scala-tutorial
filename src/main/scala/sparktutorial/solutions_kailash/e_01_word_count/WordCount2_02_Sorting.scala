@@ -20,7 +20,7 @@ object WordCount2_02_Sorting {
     //true for ascending, false for descending
     var sorted = wc.sortBy(x => x._1, ascending)
     var asc_desc = if (ascending) "/ascending/" else "/descending/"
-    sorted.saveAsTextFile(WC2Setup.ioPath._2 + asc_desc)
+    sorted.saveAsTextFile(WC2Resources.ioPath._2 + asc_desc)
     sorted
   }
 

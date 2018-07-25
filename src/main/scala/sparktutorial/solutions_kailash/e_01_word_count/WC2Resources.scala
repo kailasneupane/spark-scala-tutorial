@@ -7,7 +7,7 @@ import scala.io.StdIn
 /**
   * Created by kneupane on 7/24/18.
   */
-object WC2Setup {
+object WC2Resources {
 
   val conf = new SparkConf()
     .setAppName("Different version of bible")
@@ -41,5 +41,6 @@ object WC2Setup {
   }
 
   val input = sc.textFile(ioPath._1)
+  val stopWordsRDD = sc.textFile("data/stop-words.txt")
 
 }
