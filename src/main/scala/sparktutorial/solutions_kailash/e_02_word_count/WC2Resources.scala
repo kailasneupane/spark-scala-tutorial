@@ -14,6 +14,7 @@ object WC2Resources {
     .setMaster("local[*]")
     .set("spark.hadoop.validateOutputSpecs", "false")
     .set("spark.driver.allowMultipleContexts", "true")
+    .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
   val sc = new SparkContext(conf)
 
   //bible input files path
